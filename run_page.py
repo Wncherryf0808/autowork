@@ -13,8 +13,6 @@ from scripts.common.app_control import App
 # 不设置参数的话，Airtest 会读取运行时命令行传入的各项参数，来对环境进行初始化。
 # 要尽量在脚本初始化期间调用 auto_setup 接口，保证尽可能争取初始化环境/并生成 log 文件，否则不会生成 log 内容
 auto_setup(__file__)
-dev = connect_device("Android:///")
-
 
 class AutoTest(unittest.TestCase):
 
